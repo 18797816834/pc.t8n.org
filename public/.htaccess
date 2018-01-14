@@ -1,0 +1,8 @@
+#RewriteEngine on
+#
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#
+#RewriteCond $1 !^(index\.php|images|robots\.txt)
+#RewriteRule ^(.*)$ index.php [E=PATH_INFO:$1,QSA,PT,L]
+#RewriteRule ^.git - [F,L]

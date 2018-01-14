@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>自定义插件实现Banner滚动</title>
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="js/jquery.scrollBanner.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="banner"></div>
+<script type="text/javascript">
+$("#banner").scrollBanner({
+	images : [
+		{src:"img/banner1.png",title:"banner1",href:"#"},
+		{src:"img/banner2.png",title:"banner2",href:"#"},
+		{src:"img/banner3.png",title:"banner3",href:"#"},
+		{src:"img/banner4.png",title:"banner4",href:"#"}
+	],
+	scrollTime:3000,
+	bannerHeight:"500px",
+	iconColor: "#FFFFFF",
+	iconHoverColor : "#82C900",
+	iconPosition : "center"
+});
+</script>
+</body>
+</html>
